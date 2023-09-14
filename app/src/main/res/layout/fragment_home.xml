@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homeFragmentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.HomeFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="410dp"
+            android:layout_height="720dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:context=".ui.MapsFragment" />
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/navigationBar"
+            android:layout_width="412dp"
+            android:layout_height="74dp"
+            android:textAlignment="textStart"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.99"
+            tools:context=".ui.HomeFragment">
+
+            <!-- TODO: Update blank fragment layout -->
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavigationView"
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:background="@color/white">
+
+            </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+            <ImageButton
+                android:id="@+id/myPlacesButton"
+                android:layout_width="130dp"
+                android:layout_height="60dp"
+                android:background="@color/purple_700"
+                android:contentDescription="My Geocaches"
+                android:elevation="100dp"
+                android:src="@android:drawable/ic_menu_myplaces"
+                android:translationX="5dp"
+                app:layout_anchor="@+id/bottomNavigationView"
+                app:layout_anchorGravity="start|center" />
+
+            <ImageButton
+                android:id="@+id/searchLocationsButton"
+                android:layout_width="130dp"
+                android:layout_height="60dp"
+                android:background="@color/purple_700"
+                android:contentDescription="Search"
+                android:elevation="100dp"
+                android:src="@android:drawable/ic_menu_search"
+                android:translationX="-5dp"
+                app:layout_anchor="@+id/bottomNavigationView"
+                app:layout_anchorGravity="end|center" />
+
+            <ImageButton
+                android:id="@+id/trackButton"
+                android:layout_width="130dp"
+                android:layout_height="60dp"
+                android:background="@color/purple_700"
+                android:contentDescription="Map"
+                android:elevation="100dp"
+                android:src="@android:drawable/ic_menu_mylocation"
+                android:visibility="visible"
+                app:layout_anchor="@+id/bottomNavigationView"
+                app:layout_anchorGravity="center" />
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Logout"
+            android:translationX="10dp"
+            android:translationY="10dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/stopTrackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="580dp"
+            android:text="Stop Tracking"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/distanceString"
+            android:layout_width="207dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/dist_string"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.72"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/map" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

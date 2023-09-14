@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Geocache</string>
+    <string name="title_activity_maps">Geocache</string>
+    <string name="errorMessage"></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="backArrows">&lt;&lt;</string>
+    <string name="warningText"></string>
+    <string name="searchWarningText"></string>
+    <string name="dist_string"></string>
+</resources>

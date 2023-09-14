@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1043174153374",
+    "project_id": "geocache-b951b",
+    "storage_bucket": "geocache-b951b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1043174153374:android:7ef88b5689a35a26822f8f",
+        "android_client_info": {
+          "package_name": "com.example.geocache"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1043174153374-rgbnddeja0hp1olrfd12pft5qhbnr7b2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_sY3qQW2GdnY-2wIVVNK-YlycAMcXKHY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1043174153374-rgbnddeja0hp1olrfd12pft5qhbnr7b2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
