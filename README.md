@@ -8,7 +8,8 @@ Users can create an account, sign in, view their location, view geocache locatio
 This app was created in Android Studio using Java, XML, Google Maps services, and Google Firestore.
 The main Java code is located in app > src > main > java/com/example/geocache.
 
-
+App Demo:
+https://clipchamp.com/watch/UOJHPvcezSy
 
 
 
